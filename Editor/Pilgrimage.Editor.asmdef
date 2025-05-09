@@ -1,5 +1,5 @@
 {
-    "name": "OliveStudio.Pilgrimage.Editor",
+    "name": "OliveGameStudio.Pilgrimage.Editor",
     "rootNamespace": "",
     "references": [
         "Unity.Localization",
