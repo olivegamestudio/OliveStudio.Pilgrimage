@@ -1,0 +1,17 @@
+{
+    "name": "OliveStudio.Unity",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Localization",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "com.olivegamestudio.pilgrimage",
+  "displayName": "Pilgrimage",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.9",
+    "com.unity.localization": "1.5.3",
+     "com.unity.test-framework": "1.1.31"
+  },
+  "author": {
+    "name": "OliveGameStudio",
+    "email": "simon@olivegame.studio",
+    "url": "https://www.olivegame.studio"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivegamestudio/OliveStudio.Unity.git"
+  },
+  "keywords": [
+  ],
+  "description": "A quest/inventory system."
+}
