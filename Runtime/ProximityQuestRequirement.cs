@@ -4,7 +4,7 @@ using UnityEngine.Localization;
 
 public class ProximityQuestRequirement : QuestRequirement
 {
-    public GameObject Target;
+    public QuestActor Target;
 
     public float Distance = 1f;
 
