@@ -31,12 +31,12 @@ public static class QuestEvents
     /// Invokes the QuestCompleted event.
     /// </summary>
     /// <param name="quest">The quest that was completed.</param>
-    public static void OnQuestCompleted(Quest quest) 
+    public static void NotifyQuestCompleted(Quest quest) 
         => QuestCompleted.Invoke(null, new QuestCompletedEventArgs(quest));
 
     /// <summary>
     /// Invokes the reached point of interest event.
     /// </summary>
-    public static void OnReachedPointOfInterest()
+    public static void NotifyReachedPointOfInterest()
         => ReachedPointOfInterest.Invoke(null, new PointOfInterestEventArgs());
 }
