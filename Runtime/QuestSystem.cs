@@ -7,7 +7,7 @@ public class QuestSystem : MonoBehaviour
     /// <summary>
     /// The array of quests managed by the quest system.
     /// </summary>
-    public Quest[] Quests = Array.Empty<Quest>();
+    public Quest[] Quests { get; set; } = Array.Empty<Quest>();
 
     /// <summary>
     /// Start is called before the first frame update.
