@@ -6,7 +6,7 @@
   "dependencies": {
     "com.unity.textmeshpro": "3.0.9",
     "com.unity.localization": "1.5.3",
-     "com.unity.test-framework": "1.1.31"
+    "com.unity.test-framework": "1.1.31"
   },
   "author": {
     "name": "OliveGameStudio",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/olivegamestudio/Pilgrimage.git"
   },
-  "keywords": [
-  ],
-  "description": "A quest/inventory system."
+  "keywords": [],
+  "description": "A quest/inventory system.",
+  "_fingerprint": "2f7bab7a53afb9f4c93c814112e97031c32dc889"
 }
