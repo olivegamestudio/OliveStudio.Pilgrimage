@@ -1,5 +1,5 @@
 {
-    "name": "OliveGameStudio.Pilgrimage.Tests",
+    "name": "OliveStudio.Pilgrimage.Tests",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
