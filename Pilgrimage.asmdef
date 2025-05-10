@@ -1,6 +1,7 @@
 {
     "name": "OliveStudio.Pilgrimage",
-    "rootNamespace": "",
+    "rootNamespace": "OliveGameStudio.Pilgrimage",
+    "autoReferenced": true,
     "references": [
         "Unity.Localization",
         "Unity.TextMeshPro"
