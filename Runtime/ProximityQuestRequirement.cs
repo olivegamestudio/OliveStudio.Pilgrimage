@@ -13,10 +13,19 @@ public class ProximityQuestRequirement : QuestRequirement
     /// </summary>
     bool IsInProximityToTarget => Target != null && Vector2.Distance(gameObject.transform.position, Target.transform.position) < Distance;
 
+    void Start()
+    {
+        if (Target == null)
+        {
+            Debug.LogError("Target is not set for ProximityQuestRequirement.");
+        }
+    }
+
     void Update()
     {
-        if (IsInProximityToTarget)
+        if (!IsComplete && IsInProximityToTarget)
         {
+            Debug.Log("The actor has reached the target area, requirement completed.");
             IsComplete = true;
         }
     }

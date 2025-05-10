@@ -32,4 +32,21 @@ public class Quest : MonoBehaviour
     public LocalizedString Progress;
 
     public List<QuestRequirement> Requirements = new();
+
+    public bool IsComplete
+    {
+        get
+        {
+            foreach (QuestRequirement requirement in Requirements)
+            {
+                if (!requirement.IsComplete)
+                {
+                    // one of the requirements has not been completed
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
 }
