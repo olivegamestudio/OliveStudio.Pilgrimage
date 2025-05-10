@@ -4,4 +4,5 @@ using UnityEngine.Localization;
 
 public class QuestRequirement : MonoBehaviour
 {
+    public bool IsComplete { get; protected set; }
 }
