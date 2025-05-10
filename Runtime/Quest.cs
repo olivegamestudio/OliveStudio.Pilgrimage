@@ -30,4 +30,6 @@ public class Quest : MonoBehaviour
     /// Gets or sets the localized progress of the quest.
     /// </summary>
     public LocalizedString Progress;
+
+    public List<QuestRequirement> Requirements = new();
 }
