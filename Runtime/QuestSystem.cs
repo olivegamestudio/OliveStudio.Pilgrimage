@@ -23,7 +23,7 @@ public class QuestSystem : MonoBehaviour
     /// </summary>
     void OnEnable()
     {
-        Game.QuestCompleted += OnQuestCompleted;
+        QuestEvents.QuestCompleted += OnQuestCompleted;
     }
 
     /// <summary>
@@ -31,7 +31,7 @@ public class QuestSystem : MonoBehaviour
     /// </summary>
     void OnDisable()
     {
-        Game.QuestCompleted -= OnQuestCompleted;
+        QuestEvents.QuestCompleted -= OnQuestCompleted;
     }
 
     /// <summary>
@@ -51,7 +51,7 @@ public class QuestSystem : MonoBehaviour
         {
             if (quest.CanAutoComplete && quest.IsComplete)
             {
-                Game.OnQuestCompleted(quest);
+                QuestEvents.OnQuestCompleted(quest);
             }
         }
     }
