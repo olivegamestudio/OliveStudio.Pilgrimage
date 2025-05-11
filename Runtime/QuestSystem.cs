@@ -18,29 +18,24 @@ public class QuestSystem : MonoBehaviour
         Quests = gameObject.GetComponentsInChildren<Quest>();
     }
 
-    /// <summary>
-    /// Subscribes to the EnemyDestroyed and QuestCompleted events.
-    /// </summary>
     void OnEnable()
     {
-        //QuestEvents.QuestCompleted += OnQuestCompleted;
+        QuestEvents.ReachedPointOfInterest += OnQuestCompleted;
     }
 
-    /// <summary>
-    /// Unsubscribes from the EnemyDestroyed and QuestCompleted events.
-    /// </summary>
     void OnDisable()
     {
-        //QuestEvents.QuestCompleted -= OnQuestCompleted;
+        QuestEvents.ReachedPointOfInterest -= OnQuestCompleted;
     }
+
+    void OnQuestCompleted(object sender, PointOfInterestEventArgs e) => OnCheckQuestCompletion();
 
     /// <summary>
     /// Gets the quest with the specified identifier.
     /// </summary>
     /// <param name="questId">The identifier of the quest.</param>
     /// <returns>The quest with the specified identifier, or null if not found.</returns>
-    public Quest GetQuest(int questId)
-        => Quests.FirstOrDefault(it => it.Id == questId);
+    public Quest GetQuest(int questId) => Quests.FirstOrDefault(it => it.Id == questId);
 
     /// <summary>
     /// Check a quest can be completed.
