@@ -10,6 +10,11 @@ public class Quest : MonoBehaviour
     public int Id;
 
     /// <summary>
+    /// Gets or sets the quests that must be completed before this quest can be started.
+    /// </summary>
+    public List<Quest> Prerequisite = new();
+
+    /// <summary>
     /// Gets or sets the quest to auto complete when the objectives are all done.
     /// Set to true if the quest completes on collecting/achieving goals.
     /// Set to false if the quest completes manually e.g. at a quest end point.
